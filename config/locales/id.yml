@@ -16,7 +16,7 @@
 
 # Locale.
 
-id:
+en:
   activerecord:
     attributes:
       user:
@@ -207,7 +207,7 @@ id:
   delivery_error: Terjadi kesalahan selama pengiriman surel. Silakan hubungi administrator!
   docs: Dokumentasi
   email: Surel
-  email_sent: "%{email_type} email Anda telah dikirim! (Silakan periksa folder Spam Anda jika Anda belum menerimanya)"
+  email_sent: %{email_type} email Anda telah dikirim! (Silakan periksa folder Spam Anda jika Anda belum menerimanya)
   enter_your_name: Masukkan nama Anda!
   errors:
     bigbluebutton:
@@ -293,7 +293,7 @@ id:
     search:
       start: Mulai mencari ...
   landing:
-    about: "%{href} Layanan kelas daring yang diberdayakan oleh komunitas Gimpscape Indonesia sebagai sarana untuk belajar bersama. Kelas Gimpscape ditenagai oleh perkakas open source BigBlueButton dengan antarmuka ringkas dari Greenlight."
+    about: "Layanan kelas daring yang diberdayakan oleh komunitas Gimpscape Indonesia sebagai sarana untuk belajar bersama. Kelas Gimpscape ditenagai oleh perkakas open source BigBlueButton dengan antarmuka ringkas dari %{href}."
     welcome: Selamat Datang di Kelas Gimpscape.
     video: Tonton tutorial kami tentang penggunaan Greenlight
     upgrade: Tunjukkan pada saya cara meningkatkan ke 2.0!
