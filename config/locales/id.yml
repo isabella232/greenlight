@@ -1,0 +1,594 @@
+# BigBlueButton open source conferencing system - http://www.bigbluebutton.org/.
+#
+# Copyright (c) 2018 BigBlueButton Inc. and by respective authors (see below).
+#
+# This program is free software; you can redistribute it and/or modify it under the
+# terms of the GNU Lesser General Public License as published by the Free Software
+# Foundation; either version 3.0 of the License, or (at your option) any later
+# version.
+#
+# BigBlueButton is distributed in the hope that it will be useful, but WITHOUT ANY
+# WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public License along
+# with BigBlueButton; if not, see <http://www.gnu.org/licenses/>.
+
+# Locale.
+
+en:
+  activerecord:
+    attributes:
+      user:
+        accepted_terms: "Syarat dan ketentuan"
+        email: Surel
+        name: Nama
+        password: Sandi
+        password_confirmation: Konfirmasi Sandi
+    errors:
+      models:
+        user:
+          confirmation: sandi tidak cocok
+  administrator:
+    site_settings:
+      authentication:
+        disabled: Dinonaktifkan
+        enabled: Diaktifkan
+        info: Hanya izinkan pengguna terotentikasi untuk bergabung dengan ruangan
+        title: Membutuhkan Otentikasi untuk Ruangan
+        user-info: Anda harus masuk ke Greenlight untuk bergabung dengan ruangan ini
+      branding:
+        change: Ubah gambar
+        info: Ubah gambar branding yang muncul di sudut kiri atas
+        placeholder: URL gambar...
+        title: Gambar Branding
+        invalid: URL tidak valid
+      legal:
+        change: Ubah URL
+        info: Ubah Tautan Legalitas yang muncul di bagian bawah halaman
+        placeholder: URL Legalitas...
+        title: Legal
+        invalid: URL tidak valid
+      privpolicy:
+        change: Ubah URL
+        info: Ubah Tautan Kebijakan Privasi yang muncul di bagian bawah halaman
+        placeholder: URL Kebijakan Privasi ...
+        title: Kebijakan Privasi
+        invalid: URL tidak valid
+      cache:
+        info: Membersihkan cache penyedia layanan tersimpan yang memaksa permintaan baru untuk info yang diperbarui
+        title: Bersihkan Cache Penyedia Layanan
+        button: Bersihkan Cache
+      clear_auth:
+        info: Menghapus autentikator saat ini untuk pengguna yang memungkinkan mereka masuk kembali menggunakan metode otentikasi yang berbeda
+        title: Bersihkan Authenticator Saat Ini
+        button: Bersihkan Authenticator
+      color:
+        info: Mengubah Warna Reguler akan mengubah tema Terang dan Gelap. Tema Terang dan Gelap kemudian dapat diubah secara individual
+        title: Warna Primer
+        regular: Reguler
+        lighten: Terang
+        darken: Gelapkan
+      log_level:
+        title: Level Log
+        information: Ubah Level Log untuk seluruh penerapan (deployment)
+        debug: Debug
+        info: Info
+        warn: Peringatan
+        error: Galat
+        fatal: Fatal
+        unknown: Tak diketahui
+      recording_visibility:
+        info: Atur visibilitas perekaman baku untuk rekaman baru
+        title: Merekam Visibilitas Baku
+        warning: Pengaturan ini hanya akan diterapkan pada ruangan yang tidak berjalan
+      registration:
+        info: Ubah cara pengguna mendaftar ke situs web
+        title: Metode Pendaftaran
+        methods:
+          approval: Setujui/Tolak
+          invite: Bergabung dengan Undangan
+          open: Buka Pendaftaran
+      rooms:
+        info: Membatasi jumlah ruangan yang bisa dimiliki pengguna (termasuk Ruangan Utama). Pengaturan ini tidak berlaku untuk administrator.
+        title: Jumlah Ruangan Tiap Pengguna
+      shared_access:
+        info: Pengaturan yang dinonaktifkan akan menghapus tombol dari dropdown opsi Ruangan, mencegah pengguna berbagi ruangan
+        title: Izinkan Pengguna untuk Berbagi Ruangan
+      subtitle: Kustomisasi Greenlight
+      title: Pengaturan Situs
+    flash:
+      approved: Pengguna telah berhasil disetujui.
+      banned: Pengguna telah berhasil diblokir.
+      unbanned: Pemblokiran pengguna telah berhasil dibuka.
+      delete: Pengguna berhasil dihapus
+      delete_fail: Gagal menghapus pengguna
+      demoted: Pengguna telah berhasil diturunkan pangkatnya
+      invite: Undangan berhasil dikirim ke %{email}
+      invite_email_verification: Email harus diaktifkan untuk menggunakan metode ini. Silakan hubungi administrator sistem Anda.
+      merge_fail: Terjadi masalah saat menggabungkan akun pengguna. Silakan periksa pengguna yang dipilih dan coba lagi
+      merge_success: Akun pengguna berhasil digabungkan
+      perm_deleted: Pengguna telah dihapus secara permanen
+      promoted: Pengguna telah berhasil dipromosikan
+      registration_method_updated: Metode pendaftaran berhasil diperbarui
+      reset_password: Pengguna telah mengirim surel untuk mengatur ulang kata sandi mereka. (Silakan minta mereka memeriksa folder spam mereka jika mereka belum menerimanya)
+      restored: Pengguna telah berhasil dipulihkan
+      room_configuration: Konfigurasi Ruangan berhasil diubah
+      settings: Pengaturan Situs berhasil diubah
+      unauthorized: Anda tidak berwenang untuk melakukan tindakan pada pengguna ini
+    recordings:
+      title: Rekaman Server
+      no_recordings: Server ini tidak memiliki rekaman.
+    roles:
+      appear_in_share_list: Sertakan pengguna dengan peran ini dalam dropdown untuk berbagi ruangan
+      can_create_rooms: Dapat membuat ruangan
+      delete: Hapus peran
+      invalid_create: Terjadi masalah saat membuat peran baru. Periksa value pada peran dan coba lagi
+      invalid_order: Terjadi masalah saat memperbarui prioritas peran. Silakan periksa value-nya dan coba lagi
+      invalid_update: Ada masalah saat memperbarui izin peran. Silakan periksa value-nya dan coba lagi
+      manage_rooms_recordings: Izinkan pengguna dengan peran ini untuk mengelola ruang server dan rekaman
+      name: Nama peran
+      new_role: Buat peran baru
+      role_has_users: Peran ini ditugaskan untuk akun %{user_count}. Hapus semua akun dari peran ini sebelum menghapusnya.
+      title: Peran
+      promote_email: Kirim surel ke pengguna saat mereka diberi peran ini
+      demote_email: Kirim surel ke pengguna saat mereka dihapus dari peran ini
+      edit_site_settings: Izinkan pengguna dengan peran ini untuk mengedit pengaturan situs
+      edit_roles: Izinkan pengguna dengan peran ini untuk mengedit peran lainnya
+      manage_users: Izinkan pengguna dengan peran ini untuk mengelola pengguna
+      invalid_assignment: Terjadi masalah saat menetapkan peran ke pengguna. Silakan periksa value-nya dan coba lagi
+      colour:
+        title: Warna Peran
+        info: Atur warna yang akan dikaitkan dengan peran
+    room_configuration:
+      title: Konfigurasi Ruangan
+      mute:
+        info: Secara otomatis membisukan pengguna ketika mereka bergabung dengan ke Kelas Gimpscape
+      require_moderator:
+        info: Meminta moderasi dari moderator kelas Gimpscape saat pengguna mencoba bergabung. Jika pengguna disetujui, mereka akan dapat bergabung dengan kelas.
+      allow_any:
+        info: Mengizinkan pengguna mana pun memulai kelas kapan saja. Secara baku, hanya pemilik ruangan yang dapat memulai kelas.
+      all_moderator:
+        info: Memberikan semua hak istimewa moderator pengguna di Kelas Gimpscape saat mereka bergabung dalam kelas.
+      options:
+        disabled: Dinonaktifkan
+        enabled: Selalu Diaktifkan
+        optional: Opsional
+    rooms:
+      title: Ruangan Server
+      table:
+        ended: "Diakhiri: %{session}"
+        id: ID
+        not_running: Tidak Berjalan
+        participants: Peserta
+        running: Berjalan
+        started: "Dimulai: %{session}"
+        status: Status
+        view: Lihat
+    title: Pengaturan Organisasi
+    users:
+      invite: Undang Peserta
+      edit:
+        title: Edit Detail Pengguna
+      settings:
+        approve: Setujui
+        decline: Tolak
+        ban: Blokir Pengguna
+        delete: Hapus
+        edit: Edit
+        edit_roles: Edit peran peserta
+        merge: Gabung
+        perm_delete: Hapus permanen
+        unban: Buka blokir
+        undelete: Batal Hapus
+      table:
+        authenticator: Authenticator
+        created: Dibuat
+        name: Nama
+        not_found: Tidak ada pengguna yang cocok dengan pencarian Anda
+        no_users: Tidak ada pengguna yang ditemukan
+        role: Peran
+        uid: ID Pengguna
+        username: Username
+      title: Atur Pengguna
+  add_to_google_calendar: "Tambahkan ke Kalender Google"
+  bigbluebutton: Kelas Gimpscape
+  bigbluebutton_exception: Ups, ada kesalahan saat memulai kelas!
+  cancel: Batal
+  cookies:
+    cookie_info: Cookie membantu kami memberikan layanan kami. Dengan menggunakan layanan kami, Anda menyetujui penggunaan cookie kami.
+    cookie_button: Saya setuju
+  copied: Tersalin
+  copy: Salin
+  date:
+    month_names: [~, Januari, Februari, Maret, April, Mei, Juni, Juli, Agustus, September, Oktober, November, Desember]
+  default_admin: Anda masih menggunakan kata sandi default untuk akun ini. Silakan klik <a href="%{edit_link}">here</a> untuk mengubahnya
+  delete: Hapus
+  delivery_error: Terjadi kesalahan selama pengiriman surel. Silakan hubungi administrator!
+  docs: Dokumentasi
+  email: Surel
+  email_sent: %{email_type} email Anda telah dikirim! (Silakan periksa folder Spam Anda jika Anda belum menerimanya)
+  enter_your_name: Masukkan nama Anda!
+  errors:
+    bigbluebutton:
+      help: Pastikan Anda mengambil langkah yang tepat.. <a href="%{doc_link}">Pelajari</a>
+      message: Endpoint dan Secret Kelas Gimpscape tidak valid
+      title: Server oleng
+    internal:
+      message: Sepertinya ada kesalahan internal.
+      help: Kesalahan telah dicatat, kami akan memeriksanya!
+      report: Laporkan Masalah
+    maintenance:
+      message: Maaf, kami sedang dalam perbaikan.
+      help: Kami akan segera kembali!
+    migration_error:
+      contact_admin: Jika Anda bukan administrator, silakan hubungi salah satu admin.
+      continue: Saya ingin tetap menggunakan 1.0.
+      notice: >
+        Greenlight mengalami kesalahan migrasi basis data.<br>
+        Ini mungkin karena Anda belum memperbarui ke Greenlight 2.0.
+      upgrade: Tunjukkan pada saya cara meningkatkan ke 2.0!
+      version: Kami telah merilis versi baru Greenlight, tetapi database Anda tidak kompatibel.
+    messages:
+      blank: tidak boleh kosong
+      too_short: terlalu pendek
+      invalid: tidak valid
+      taken: sudah digunakan
+      accepted: harus diterima
+      confirmation: tidak cocok %{attribute}
+      inclusion: tidak termasuk dalam daftar
+    no_provider:
+      message: Situs yang Anda coba akses tidak diaktifkan
+      help: Silakan hubungi administrator sistem Anda untuk mengatur Greenlight
+    not_found:
+      message: Maaf! Halaman yang Anda cari tidak ada.
+      help: Apakah mungkin sudah dihapus?
+      user_not_found:
+        help: Silakan hubungi administrator.
+        message: Maaf, pengguna ini tidak terdaftar.
+      user_missing:
+        help: Harap verifikasi URL dan coba lagi
+        message: URL yang Anda masukkan tidak valid.
+    title: Galat
+    unauthorized:
+      message: Anda tidak memiliki akses ke aplikasi ini
+      help: Jika Anda yakin ini kesalahan, silakan hubungi administrator sistem Anda.
+  expired_reset_token: Tautan pengaturan ulang kata sandi telah kedaluwarsa!
+  features:
+    title: fitur
+    rooms: Ruangan yang Dipersonalisasi
+    recordings: Manajemen Perekaman
+    designs: Desain Khusus
+    authentication: Otentikasi Pengguna
+  footer:
+    legal: Legal
+    privpolicy: Rahasia pribadi
+    powered_by: Ditenagai oleh %{href}.
+  forgot_password:
+    subtitle: Lupa Sandi
+    email: Surel
+    submit: Kirim
+  go_back: Kembali
+  greenlight: Greenlight
+  header:
+    all_recordings: Semua Rekaman
+    dropdown:
+      account_settings: Organisasi
+      help: Perlu bantuan?
+      home: Beranda
+      settings: Profil
+      signout: Keluar
+  home_room: Ruang Utama
+  info_update_success: Informasi berhasil diperbarui.
+  invalid_credentials: Email dan kata sandi yang Anda masukkan tidak cocok dengan catatan kami. Coba lagi atau klik Lupa Kata Sandi untuk mengatur ulang kata sandi Anda.
+  invalid_login_method: Gagal masuk karena ketidakcocokan akun. Anda harus masuk dengan omniauth.
+  invite_message: "Untuk mengundang seseorang ke kelas, kirim tautan ini kepada mereka:"
+  javascript:
+    room:
+      mailer:
+        subject: 'telah mengundang Anda untuk melihat rekaman.'
+        body: 'Untuk melihat rekaman, ikuti tautan di bawah ini:'
+        autogenerated: 'Email ini dibuat secara otomatis oleh Verina.'
+        footer: 'Layanan kelas daring yang diberdayakan oleh komunitas Gimpscape Indonesia yang ditenagai oleh perkakas open source BigBlueButton, https://bigbluebutton.org/.'
+    search:
+      start: Mulai mencari ...
+  landing:
+    about: "%{href} Layanan kelas daring yang diberdayakan oleh komunitas Gimpscape Indonesia sebagai sarana untuk belajar bersama. Kelas Gimpscape ditenagai oleh perkakas open source BigBlueButton dengan antarmuka ringkas dari Greenlight."
+    welcome: Selamat Datang di Kelas Gimpscape.
+    video: Tonton tutorial kami tentang penggunaan Greenlight
+    upgrade: Tunjukkan pada saya cara meningkatkan ke 2.0!
+    version: Kami telah merilis versi baru Greenlight, tetapi database Anda tidak kompatibel.
+  language_default: Baku (bahasa peramban)
+  ldap_error: Tidak dapat terhubung ke server LDAP. Silakan periksa konfigurasi LDAP Anda di file env dan pastikan server Anda berjalan.
+  login: Masuk
+  login_title: Masuk ke akun Anda
+  mailer:
+    user:
+      approve:
+        info: Akun Anda telah disetujui.
+        signin: Untuk mengakses ruangan pribadi Anda, klik tombol di bawah ini dan masuk.
+        signin_link: Masuk
+        signup:
+          info: Seorang pengguna baru telah mendaftar untuk mengikuti kelas.
+          more-info: Untuk memungkinkan pengguna ini mengakses kelas, Anda harus menyetujui akun mereka dalam pengaturan organisasi.
+          admins_link: Kunjungi Halaman Organisasi
+          subject: Daftar Pengguna Baru Kelas Gimpscape
+          username: Pengguna mendaftar dengan nama %{name} dan surel %{email}.
+        subject: Akun Disetujui
+        username: Nama pengguna Anda %{email}.
+      demoted:
+        info: Anda bukan lagi seorang %{role} pada %{url}.
+        more-info: Anda sekarang memiliki hak yang sama dengan pengguna biasa.
+        root_link: Masuk
+        subtitle: "%{role} Hak Dicabut"
+      invite:
+        info: Anda telah diundang ke ruang pribadi Anda sendiri oleh %{name}
+        signup_info: Untuk mendaftar menggunakan email Anda, klik tombol di bawah dan ikuti langkah-langkahnya.
+        signup_link: Daftar
+        signup:
+          info: Seorang pengguna yang diundang telah mendaftar untuk menggunakan Greenlight.
+          admins_link: Kunjungi Halaman Organisasi
+          subject: Daftar Pengguna Baru Kelas Gimpscape
+          username: Pengguna mendaftar dengan nama %{name} dan surel %{email}.
+        subject: Undangan untuk mengikuti Kelas Gimpscape
+        username: Nama pengguna Anda %{email}.
+      password_reset:
+        title: 'Reset kata sandi'
+        welcome: Reset kata sandi telah diminta untuk surel <b>%{email}</b>
+        message: 'Jika Anda meminta pengaturan ini, silakan klik tautan di bawah ini untuk mengatur ulang kata sandi Anda:'
+        reset_link: Setel Ulang Kata Sandi
+        expire: Tautan ini akan kedaluwarsa dalam dua jam.
+        ignore: Anda dapat dengan aman mengabaikan surel ini jika Anda tidak membuat permintaan ini.
+      promoted:
+        admins_link: Kunjungi Halaman Organisasi
+        info: Anda sekarang seorang %{role} pada %{url}.
+        more-info: Untuk melihat kemampuan baru Anda, silakan kunjungi %{url}.
+        subtitle: "Hak %{role} Diberikan"
+      verify_email:
+        welcome: Selamat datang di ruang pribadi Anda, %{name}!
+        success: Leveraging %{bigbluebutton}, Anda dapat membuat ruangan sendiri untuk menyelenggarakan sesi dan berkolaborasi dengan orang lain.
+        username: Nama pengguna Anda %{email}.
+        verify: Untuk memverifikasi akun Anda, cukup klik tombol di bawah ini.
+        verify_text: 'Untuk memverifikasi akun Anda, cukup ikuti tautan ini: %{url}'
+        verify_link: verifikasi akun
+        thanks: Terima kasih telah bergabung dan bersenang-senanglah!
+  maintenance:
+    window_alert: Jendela pemeliharaan dijadwalkan untuk %{date}
+  max_concurrent: Jumlah maksimum sesi konkuren yang dibolehkan telah tercapai!
+  merged: Digabung
+  modal:
+    create_role:
+      create: Buat Peran baru
+      footer_text: Anda dapat mengedit izin individu untuk peran ini setelah Anda membuatnya
+      name_placeholder: Masukkan nama peran ...
+      not_blank: Nama peran tidak boleh kosong.
+      title: Buat Peran Baru
+    create_room:
+      access_code: Kode akses
+      access_code_placeholder: Buat kode akses ruangan opsional
+      auto_join: Secara otomatis masukkan saya ke kelas
+      create: Buat Ruangan
+      free_delete: Anda bebas untuk menghapus ruangan ini kapan saja.
+      name_placeholder: Masukkan nama ruangan ...
+      not_blank: Nama ruangan tidak boleh kosong.
+      title: Buat Ruangan Baru
+    delete_account:
+      confirm: Anda yakin ingin menghapus akun ini?
+      delete: Saya yakin, hapus akun ini.
+      keep: Sebenarnya, saya akan menyimpannya.
+      delete_warning: Ini akan menonaktifkan akun pengguna. Semua pengguna yang tidak aktif dapat ditemukan di bawah tab yang dihapus.
+      warning: Keputusan ini sudah final. Anda <b>tidak</b> akan dapat memulihkan data terkait.
+    delete_room:
+      confirm: Anda yakin ingin menghapus %{room}?
+      delete: Saya yakin, hapus ruangan ini.
+      keep: Setelah dipikir-pikir, saya akan menyimpannya.
+      warning: Anda <b>tidak</b> dapat memulihkan ruangan ini
+      recording_warning: atau salah satu dari %{recordings_num} rekaman terkait.
+    invite_user:
+      email_placeholder: Masukkan email pengguna (dipisahkan dengan koma)
+      footer: Pengguna akan menerima email berisi instruksi tentang cara mendaftar
+      send: Kirim undangan
+      title: Undangan Peserta
+    login:
+      or: atau
+      with: Masuk dengan %{provider}
+      forgot_password: Lupa Sandi?
+    rename_recording:
+    remove_shared:
+      title: Anda yakin ingin menghapus ruangan ini dari daftar ruangan Anda?
+      delete: Saya yakin, hapus ruangan ini.
+      warning: Anda <b>tidak</b> tidak dapat lagi mengakses ruangan ini.
+    room_settings:
+      title: Pengaturan Ruangan
+      update: Perbarui Ruangan
+      client: Pilih jenis klien
+      join_moderator: Semua pengguna bergabung sebagai moderator
+      mute: Bungkam pengguna saat mereka bergabung
+      require_approval: Membutuhkan persetujuan moderator sebelum bergabung
+      start: Izinkan pengguna mana pun untuk memulai pertemuan ini
+      footer_text: Penyesuaian ruangan Anda dapat dilakukan kapan saja.
+    rename_room:
+      name_placeholder: Masukkan nama ruangan baru ...
+    share_access:
+      footer: Berbagi ruangan dengan pengguna memungkinkan mereka untuk memulai ruangan dan melihat rekaman ruangan
+      list: Dibagi dengan
+      title: Akses Berbagi Ruangan
+      save: Simpan perubahan
+      cancel_changes: Batalkan Perubahan
+      select: Pilih Pengguna
+    merge_user:
+      cancel: Batal
+      from: Akun yang akan Digabung
+      title: Gabungkan Akun Pengguna
+      to: Akun primer
+      save: Gabung
+      footer: Ruangan akun yang akan digabung akan ditransfer ke daftar ruangan Akun Primer dan kemudian akun akan dihapus.
+  name_update_success: Nama ruangan berhasil diubah!
+  no_user_email_exists: Tidak ada pengguna dengan surel yang ditentukan. Pastikan Anda mengetiknya dengan benar.
+  omniauth_error: Terjadi kesalahan saat mengautentikasi dengan omniauth. Silakan coba lagi atau hubungi administrator!
+  omniauth_specific_error: "Terjadi %{error} saat mengotentikasi dengan omniauth. Silakan coba lagi atau hubungi administrator!"
+  pagy:
+    nav:
+      prev: "&lsaquo; Sebelumnya"
+      next: "Selanjutnya &rsaquo;"
+      gap: "&hellip;"
+  password: Sandi
+  password_empty_notice: Kata sandi tidak boleh kosong.
+  password_reset_success: Kata sandi telah diatur ulang.
+  password_different_notice: Konfirmasi Kata Sandi tidak cocok.
+  provider:
+    google: Google
+    office365: Office 365
+    twitter: Twitter
+    ldap: LDAP
+  recaptcha:
+    errors:
+      recaptcha_unreachable: Ups, kami gagal memvalidasi respons reCAPTCHA Anda. Silakan coba lagi.
+      verification_failed: verifikasi reCAPTCHA gagal, silakan coba lagi.
+  recording:
+    all_recordings: Semua Rekaman
+    email: Rekaman Email
+    error: Terjadi kesalahan saat mengambil %{count} rekaman.
+    no_recordings: Ruangan ini tidak memiliki rekaman %{inject}.
+    no_user_recordings: Anda saat ini tidak memiliki rekaman.
+    no_matched_recordings: Tak ada %{inject} rekaman yang cocok dengan pencarian Anda.
+    recorded_on: Direkam pada %{date}
+    table:
+      name: Nama
+      thumbnails: Gambar mini
+      length: Durasi
+      users: Pengguna
+      visibility: Visibilitas
+      formats: Format
+    visibility:
+      public: Publik
+      unlisted: Tidak terdaftar
+    format:
+      notes: Catatan
+      podcast: Podcast
+      presentation: Presentasi
+      statistics: Statistik
+      video: Video
+  registration:
+    approval:
+      fail: Akun Anda belum disetujui. Jika beberapa hari telah berlalu sejak Anda mendaftar, silakan hubungi administrator Anda.
+      signup: Akun Anda berhasil dibuat. Itu telah dikirim ke administrator untuk persetujuan.
+    banned:
+      fail: Anda tidak memiliki akses ke aplikasi ini. Jika Anda yakin ini adalah kesalahan, harap hubungi administrator Anda. 
+    deprecated:
+      new_signin: Pilih metode login baru untuk akun Anda. Semua ruangan Anda dari akun lama Anda akan dimigrasikan ke akun baru
+      twitter_signin: Masuk melalui Twitter telah ditinggalkan dan akan dihapus pada rilis berikutnya. Klik <a href="%{link}"> di sini </a> untuk memindahkan akun Anda ke metode otentikasi baru
+      twitter_signup: Daftar melalui Twitter telah ditinggalkan. Silakan gunakan metode pendaftaran yang berbeda
+      merge_success: Berhasil menggabungkan akun twitter Anda dengan akun baru Anda. Akun twitter lama Anda telah dihapus
+    invite:
+      fail: Token Anda salah atau telah kedaluwarsa. Jika Anda yakin ini adalah kesalahan, harap hubungi administrator Anda.
+      no_invite: Anda tidak memiliki undangan untuk bergabung. Silakan hubungi administrator Anda..
+  remove: Buang
+  rename: Rename
+  reset_password:
+    invalid_token: Token atur ulang kata sandi tidak valid. Silakan coba mengatur ulang kata sandi Anda lagi.
+    subtitle: Setel Ulang Kata Sandi
+    password: Sandi Baru
+    confirm: Konfirmasi Sandi Baru
+    update: Perbarui Sandi
+    auth_change: Metode otentikasi telah berubah. Silakan periksa surel Anda untuk menetapkan kata sandi Anda.
+  roles:
+    active: Aktif
+    admin: Admin
+    banned: Diblokir
+    deleted: Dihapus
+    pending: Tertunda
+    user: Pengguna
+  room:
+    access_code_required: Silakan masukkan kode akses yang valid untuk bergabung dengan kelas ini
+    create_room: Buat Ruangan
+    create_room_error: Terjadi kesalahan saat membuat ruangan
+    create_room_success: Ruangan berhasil dibuat
+    delete:
+      home_room: Tidak dapat menghapus Ruang Utama pengguna
+      success: Ruangan berhasil dihapus
+      fail: Gagal menghapus ruangan (%{error})
+    enter_the_access_code: Masukkan kode akses ruangan
+    invalid_provider: Anda telah memasukkan url yang tidak valid. Silakan periksa url dan coba lagi.
+    invited: Anda telah diundang untuk bergabung
+    invite_participants: Undang Peserta
+    join: Gabung
+    last_session: Sesi terakhir pada %{session}
+    login: Masuk
+    owner: Pemilik
+    owner_banned: Ruangan ini saat ini tidak tersedia
+    no_room:
+      description: Masukkan url ruangan atau id ruangan untuk ruangan yang ingin Anda gabung.
+      edit_profile: Edit Profil Pengguna
+      go_to: Masuk ke Ruangan
+      invalid_room_uid: URL ruangan yang Anda masukkan tidak valid.
+      placeholder: URL/UID ruangan
+      no_recent_rooms: Anda tidak memiliki ruangan yang baru saja bergabung
+      recent_rooms: Masuk ke ruangan yang terakhir
+      title: Bergabung ke Ruangan
+    no_sessions: Ruangan ini belum memiliki sesi!
+    recordings: Rekaman Ruangan
+    room_limit: Anda telah mencapai jumlah ruangan maksimum yang diizinkan
+    room_limit_exceeded: Anda telah melampaui jumlah ruangan yang diizinkan. Tolong hapus %{difference} ruangan untuk mengakses ruangan ini.
+    sessions: Sesi
+    settings: Pengaturan Ruangan
+    share: Kelola Akses
+    shared_by: Dibagikan oleh %{email}
+    remove_shared_access_success: Berhasil menghapus ruang bersama dari daftar ruangan Anda
+    remove_shared_access_error: Terjadi kesalahan saat menghapus ruang bersama dari daftar Anda
+    shared_access_success: Ruangan berhasil dibagikan
+    shared_access_error: Terjadi kesalahan saat berbagi ruangan
+    start: Mulai
+    unavailable: Ruangan ini saat ini tidak tersedia karena surel pemilik tidak diverifikasi.
+    update_settings_error: Terjadi kesalahan saat memperbarui pengaturan ruangan
+    update_settings_success: Pengaturan ruangan berhasil diperbarui
+    wait:
+      message: Pertemuan belum dimulai.
+      auto: Anda akan secara otomatis bergabung ketika kelas dimulai.
+  settings:
+    account:
+      fullname: Nama Lengkap
+      language: Bahasa
+      provider: Penyedia Layanan
+      image: Gambar
+      image_url: URL Gambar Profil
+      roles: Peran pengguna
+      subtitle: Perbarui Info Akun Anda
+      title: Info akun
+      reset_password: Setel ulang kata sandi pengguna
+    delete:
+      button: Ya, saya ingin menghapus akun saya.
+      disclaimer: Jika Anda memilih untuk menghapus akun Anda, itu <b>TIDAK</b> dapat dipulihkan. Semua informasi mengenai akun Anda, termasuk pengaturan, ruang, dan rekaman akan dihapus.
+      subtitle: Hapus Akun Anda secara permanen
+      title: Hapus akun
+    password:
+      confirmation: Konfirmasi Kata Sandi Baru
+      new: Sandi Baru
+      old: Sandi Lawas
+      subtitle: Ubah Sandi
+      title: Sandi
+    title: Profil
+    search: Cari
+  signup:
+    password_confirm: Konfirmasi Sandi
+    subtitle: Buat sebuah akun
+    title: Daftar
+    with: Masuk dengan %{provider}
+  terms:
+    accept: Saya menerima %{href}
+    accept_existing: Saya menerima syarat dan ketentuannya
+    title: Syarat dan Ketentuan
+  test_install: >
+    Pemasangan ini menggunakan server pengujian yang telah dikonfigurasi sebelumnya, Anda harus menggantinya dengan milik Anda sendiri.
+    Untuk detailnya, lihat %{href}.
+  update: Perbarui
+  verify:
+    accept: Verifikasi
+    activated: Akun diverifikasi!
+    already_verified: Akun sudah diverifikasi
+    invalid: Tautan verifikasi tidak valid
+    not_verified: Akun Anda belum diverifikasi.
+    resend: Mengirim ulang email verifikasi
+    signin: Silakan masuk untuk mengakses akun Anda.
+    title: Verifikasi email Anda
+    verification: Verifikasi
