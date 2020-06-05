@@ -191,7 +191,7 @@ id:
         uid: ID Pengguna
         username: Username
       title: Atur Pengguna
-  add_to_google_calendar: "Tambahkan ke Kalender Google"
+  add_to_google_calendar: " + ke Kalender"
   bigbluebutton: Kelas Gimpscape
   bigbluebutton_exception: Ups, ada kesalahan saat memulai kelas!
   cancel: Batal
