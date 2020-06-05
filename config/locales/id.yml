@@ -207,7 +207,7 @@ id:
   delivery_error: Terjadi kesalahan selama pengiriman surel. Silakan hubungi administrator!
   docs: Dokumentasi
   email: Surel
-  email_sent: %{email_type} email Anda telah dikirim! (Silakan periksa folder Spam Anda jika Anda belum menerimanya)
+  email_sent: "%{email_type} email Anda telah dikirim! (Silakan periksa folder Spam Anda jika Anda belum menerimanya)"
   enter_your_name: Masukkan nama Anda!
   errors:
     bigbluebutton:
