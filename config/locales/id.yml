@@ -82,6 +82,18 @@ id:
         info: Atur visibilitas perekaman baku untuk rekaman baru
         title: Merekam Visibilitas Baku
         warning: Pengaturan ini hanya akan diterapkan pada ruangan yang tidak berjalan
+      require_consent:
+        info: This setting enables a room setting that allows room owners to specify which rooms can be recorded. Users joining a recorded room must consent before joining.
+        title: Require Room Owner and Joiner Consent to Recording
+      maintenance_banner:
+        info: Displays a Banner to inform the user of a scheduled maintenance
+        title: Maintenance Banner
+        display: Set
+        clear: Clear
+        time: "Example: Update scheduled on December 13 @ 23:00 ET. Users may experience problems signing in."        
+      preupload:
+        info: Users can preupload a presentation to be used as the default presentation for that specific room
+        title: Allow Users to Preupload Presentations
       registration:
         info: Ubah cara pengguna mendaftar ke situs web
         title: Metode Pendaftaran
@@ -96,6 +108,10 @@ id:
         info: Pengaturan yang dinonaktifkan akan menghapus tombol dari dropdown opsi Ruangan, mencegah pengguna berbagi ruangan
         title: Izinkan Pengguna untuk Berbagi Ruangan
       subtitle: Kustomisasi Greenlight
+      tabs:
+        appearance: Appearance
+        administration: Administration
+        settings: Settings
       title: Pengaturan Situs
     flash:
       approved: Pengguna telah berhasil disetujui.
@@ -150,6 +166,8 @@ id:
         info: Mengizinkan pengguna mana pun memulai kelas kapan saja. Secara baku, hanya pemilik ruangan yang dapat memulai kelas.
       all_moderator:
         info: Memberikan semua hak istimewa moderator pengguna di Kelas Gimpscape saat mereka bergabung dalam kelas.
+      recordings:
+        info: Allows room owners to specify whether they want the option to record a room or not. If enabled, the moderator must still click the "Record" button once the meeting has started.
       options:
         disabled: Dinonaktifkan
         enabled: Selalu Diaktifkan
@@ -262,7 +280,7 @@ id:
     authentication: Otentikasi Pengguna
   footer:
     legal: Legal
-    privpolicy: Rahasia pribadi
+    privpolicy: Kebijakan Privasi
     powered_by: Ditenagai oleh %{href}.
   forgot_password:
     subtitle: Lupa Sandi
@@ -352,8 +370,6 @@ id:
         verify_text: 'Untuk memverifikasi akun Anda, cukup ikuti tautan ini: %{url}'
         verify_link: verifikasi akun
         thanks: Terima kasih telah bergabung dan bersenang-senanglah!
-  maintenance:
-    window_alert: Jendela pemeliharaan dijadwalkan untuk %{date}
   max_concurrent: Jumlah maksimum sesi konkuren yang dibolehkan telah tercapai!
   merged: Digabung
   modal:
@@ -393,6 +409,14 @@ id:
       or: atau
       with: Masuk dengan %{provider}
       forgot_password: Lupa Sandi?
+    preupload:
+      change: Replace Presentation
+      choose: Choose a file...
+      current: "Current Presentation:"
+      footer: Depending on the size of the presentation, it may require additional time to upload before it can be used.
+      invalid: Invalid size/file type. Please see the restrictions below.
+      title: Add Presentation
+      use: Use Presentation
     rename_recording:
     remove_shared:
       title: Anda yakin ingin menghapus ruangan ini dari daftar ruangan Anda?
@@ -407,6 +431,7 @@ id:
       require_approval: Membutuhkan persetujuan moderator sebelum bergabung
       start: Izinkan pengguna mana pun untuk memulai pertemuan ini
       footer_text: Penyesuaian ruangan Anda dapat dilakukan kapan saja.
+      recording: Allow room to be recorded
     rename_room:
       name_placeholder: Masukkan nama ruangan baru ...
     share_access:
@@ -501,6 +526,7 @@ id:
     user: Pengguna
   room:
     access_code_required: Silakan masukkan kode akses yang valid untuk bergabung dengan kelas ini
+    add_presentation: Add Presentation
     create_room: Buat Ruangan
     create_room_error: Terjadi kesalahan saat membuat ruangan
     create_room_success: Ruangan berhasil dibuat
@@ -510,7 +536,9 @@ id:
       fail: Gagal menghapus ruangan (%{error})
     enter_the_access_code: Masukkan kode akses ruangan
     invalid_provider: Anda telah memasukkan url yang tidak valid. Silakan periksa url dan coba lagi.
+    invitation_description: You have been invited to join %{name} using BigBlueButton. To join, click the link above and enter your name.  
     invited: Anda telah diundang untuk bergabung
+    recording_present: I acknowledge that this session is going to be recorded. This may include my voice and video if enabled.
     invite_participants: Undang Peserta
     join: Gabung
     last_session: Sesi terakhir pada %{session}
@@ -527,6 +555,10 @@ id:
       recent_rooms: Masuk ke ruangan yang terakhir
       title: Bergabung ke Ruangan
     no_sessions: Ruangan ini belum memiliki sesi!
+    preupload_success: Successfully added presentation
+    preupload_error: There was an error updating the room presentation
+    preupload_remove_success: Successfully removed presentation
+    preupload_remove_error: There was an error removing the room presentation
     recordings: Rekaman Ruangan
     room_limit: Anda telah mencapai jumlah ruangan maksimum yang diizinkan
     room_limit_exceeded: Anda telah melampaui jumlah ruangan yang diizinkan. Tolong hapus %{difference} ruangan untuk mengakses ruangan ini.
@@ -579,7 +611,7 @@ id:
     accept_existing: Saya menerima syarat dan ketentuannya
     title: Syarat dan Ketentuan
   test_install: >
-    Pemasangan ini menggunakan server pengujian yang telah dikonfigurasi sebelumnya, Anda harus menggantinya dengan milik Anda sendiri.
+    Pemasangan ini menggunakan server pengujian yang telah dikonfigurasi sebelumnya, Anda harus menggantinya dengan milik Anda sendiri. 
     Untuk detailnya, lihat %{href}.
   update: Perbarui
   verify:
